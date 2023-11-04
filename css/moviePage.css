@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  margin: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Change the flex-direction of the body to row */
+  body {
+    flex-direction: column;
+  }
+
+  /* Reduce the margin-top of the #movie-info element */
+  #movie-info {
+    margin-top: 10px;
+  }
+
+  /* Reduce the margin-bottom of the image */
+  img {
+    margin-bottom: 10px;
+  }
+
+  /* Increase the font size of the headings */
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Increase the font size of the paragraphs */
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Change the flex-direction of the body to column */
+  body {
+    flex-direction: column;
+  }
+
+  /* Reduce the margin-top of the #movie-info element */
+  #movie-info {
+    margin-top: 5px;
+  }
+
+  /* Reduce the margin-bottom of the image */
+  img {
+    margin-bottom: 5px;
+  }
+
+  /* Further increase the font size of the headings */
+  h1, h2, h3 {
+    font-size: 2rem;
+  }
+
+  /* Further increase the font size of the paragraphs */
+  p {
+    font-size: 1.2rem;
+  }
+}
